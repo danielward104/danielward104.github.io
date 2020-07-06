@@ -49,6 +49,11 @@ p {
   width: 50%;
 }
 
+b.hover:hover{
+  color:#000000;
+  background-color:#FFFFFF;
+}
+
 a.button1{
   display:inline-block; 
   padding:0.35em 1.2em;
@@ -86,6 +91,48 @@ img {
   margin-bottom: 3.5%;
 }
 
+/* Hover over image effect */
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translate(-0%, -0%);
+  -ms-transform: translate(-0%, -0%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.6;
+}
+
+.container:hover .middle {
+  opacity: 0.8;
+}
+
+.text {
+  background-color: #696969;
+  color: white;
+  font-size: 24px;
+  font-family:'Penna',sans-serif;
+  padding: 8px 8px;
+}
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column1a {
