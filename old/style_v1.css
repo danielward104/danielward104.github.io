@@ -1,0 +1,144 @@
+h1 {
+  color: #000000;
+  text-align: left;
+  margin-left: 3.5%;
+  font-family:'Oswald',sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20pt;
+}
+
+body {
+  color: #000000;
+  background-color: #ffffff;
+  font-family:'Roboto',sans-serif;
+}
+
+#top, #bottom, #left, #right {
+	background: #F0F0F0;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 15px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+		
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 15px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }
+
+img {
+  border: 5px solid #555;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column1a {
+  float: left;
+  width: 28.86%;
+  padding-left: 3.5%;
+  padding-right: 3.5%;
+}
+
+.column1b {
+  float: left;
+  width: 32.94%;
+  padding-right: 3.5%;
+}
+
+.column1c {
+  float: left;
+  width: 24.20%;
+  padding-right: 3.5%;
+}
+
+.column2a {
+  float: left;
+  width: 33.78%;
+  padding-top: 1.5%;
+  padding-left: 3.5%;
+  padding-right: 3.5%;
+}
+
+.column2b {
+  float: left;
+  width: 26.10%;
+  padding-top: 1.5%;
+  padding-right: 3.5%;
+}
+
+.column2c {
+  float: left;
+  width: 26.10%;
+  padding-top: 1.5%;
+  padding-right: 3.5%;
+}
+
+.column3a {
+  float: left;
+  width: 28.66%;
+  padding-top: 1.5%;
+  padding-left: 3.5%;
+  padding-right: 3.5%;
+}
+
+.column3b {
+  float: left;
+  width: 28.66%;
+  padding-top: 1.5%;
+  padding-right: 3.5%;
+}
+
+.column3c {
+  float: left;
+  width: 28.66%;
+  padding-top: 1.5%;
+  padding-right: 3.5%;
+}
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+p {
+  margin-left: 3.5%; 
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+a.button1{
+  display:inline-block;
+  padding:0.35em 1.2em;
+  border:0.1em solid #FFFFFF;
+  margin:0 0.3em 0.3em 0;
+  margin-left: 3.5%;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#FFFFFF;
+  text-align:center;
+  transition: all 0.2s;
+}
+a.button1:hover{
+  color:#000000;
+  background-color:#FFFFFF;
+}
+@media all and (max-width:30em){
+  a.button1{
+    display:block;
+    margin:0.4em auto;
+  }
+}
